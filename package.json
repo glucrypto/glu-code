@@ -1,0 +1,31 @@
+{
+  "name": "glu-code",
+  "module": "src/index.ts",
+  "type": "module",
+  "bin": {
+    "glu-code": "bin/glu-code",
+    "glu-code-codex-last": "bin/glu-code-codex-last",
+    "glu-code-inject": "bin/glu-code-inject"
+  },
+  "scripts": {
+    "start": "bun run src/cli/gluCode.ts",
+    "codex:last": "bun run src/cli/codexLast.ts",
+    "inject": "bun run src/cli/inject.ts",
+    "start:node": "node --loader tsx --experimental-loader ./scripts/file-loader.mjs src/cli/gluCode.ts",
+    "codex:last:node": "node --loader tsx --experimental-loader ./scripts/file-loader.mjs src/cli/codexLast.ts",
+    "typecheck": "tsgo"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.1.47",
+    "better-sqlite3": "^11.8.1",
+    "node-record-lpcm16": "^1.0.1",
+    "vosk": "^0.3.39"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.7.2"
+  }
+}

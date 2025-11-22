@@ -1,0 +1,6 @@
+#!/usr/bin/env bun
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const here = dirname(fileURLToPath(import.meta.url));
+await import(resolve(here, "../src/cli/inject.ts"));
