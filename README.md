@@ -2,7 +2,7 @@
 
 Terminal-first prompt recorder with speech-to-text (Vosk), OpenTUI UI, local SQLite history, and one-key Codex launches in tmux.
 
-[!NOTE]: WIP mainly works on Linux, rough around the edges.
+> [!NOTE]: WIP mainly works on Linux, rough around the edges.
 
 ## Prereqs
 
